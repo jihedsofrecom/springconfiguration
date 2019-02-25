@@ -1,3 +1,8 @@
-server.port = 8761
-eureka.client.fetch-registry = false
-eureka.client.register-with-eureka = false
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:1236/eureka/
