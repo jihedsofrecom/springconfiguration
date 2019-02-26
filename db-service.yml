@@ -1,3 +1,25 @@
+spring:
+  application:
+    name: db-service
+  cloud:
+     config:
+           uri:jdbc:mysql://localhost:3306/dbservice
+  datasource: 
+             username: root
+             password: root
+             testWhileIdle:true
+             validationQuery:SELECT 1
+   jpa:
+       shwo-sql :true
+       hibernate:
+                 naming-strategy :org.hibernate.cfg.ImprovedNamingStrategy
+       properties:
+                  hibernate:
+                           dialect:org.hibernate.dialect.MySQL5Dialect     
+server:
+  port: 8300
+
+
 eureka:
   client:
     registerWithEureka: false
