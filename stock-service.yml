@@ -3,7 +3,7 @@ spring:
     name: stock-service
 
 server:
-  port: 8301
+  port: 9090
 
 
 eureka:
