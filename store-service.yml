@@ -4,4 +4,4 @@ server:
 eureka: 
 client: 
 service-url: 
-defaultZone: http://192.168.99.100:8761
+defaultZone:http://192.168.99.100:8761/
